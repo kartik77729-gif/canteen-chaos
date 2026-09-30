@@ -68,3 +68,6 @@ stuck is not.
 Anything not on the bug log: a problem you found yourself, a test you
 wrote, or a fix you are unsure about. Same format, plus one line on how
 you noticed it.
+
+MC-01 : The problem is with veg and non veg it automatically doesn't change
+    You have to do something then it changes
