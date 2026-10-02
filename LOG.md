@@ -12,7 +12,7 @@ Delete the example before you submit.
 
 ## Example — delete this
 
-### CC-99 — "The cart total is wrong"
+### CC-01 — "The search suggestions are behind everything"
 
 **Reproduced:** Added 2 dosas at Rs. 60 each. The cart showed
 Rs. 119.99999 instead of Rs. 130. Happened every time, on any dish with
@@ -70,4 +70,7 @@ wrote, or a fix you are unsure about. Same format, plus one line on how
 you noticed it.
 
 MC-01 : The problem is with veg and non veg it automatically doesn't change
-    You have to do something then it changes
+    You have to do something then it changes in the first screen which you see
+    in the all section else in every other it works
+Mc-02: The only thing is that the above text completely isn't on the screen so margin can be
+    added
