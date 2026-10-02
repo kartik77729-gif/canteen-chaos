@@ -14,16 +14,13 @@ Delete the example before you submit.
 
 ### CC-01 — "The search suggestions are behind everything"
 
-**Reproduced:** Added 2 dosas at Rs. 60 each. The cart showed
-Rs. 119.99999 instead of Rs. 130. Happened every time, on any dish with
-a price ending in .50.
+**Reproduced:** > "I start typing a dish name and the list of suggestions comes up, but
+> it's stuck behind the rest of the page. I can only click the very top
+> bit of it. The rest I can see, sort of, but clicking does nothing."
 
-**Cause:** The total was being added up with plain floating point and
-never rounded, so 0.1 + 0.2 style errors showed up on screen. The
-rounding helper existed but this one place was not using it.
+**Cause:** There wasn't any margin or padding on the top because of it the items weren't completely shown
 
-**Fix:** Ran the total through the existing rounding helper instead of
-adding a new one, so every price on screen goes through the same path.
+**Fix:** I just added margin on the top 45px;
 
 **Checked:** Cart, checkout and the order screen all show Rs. 130 now.
 Prices without decimals still show without a trailing .00.
