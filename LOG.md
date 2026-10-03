@@ -22,25 +22,25 @@ Delete the example before you submit.
 
 **Fix:** I just added margin on the top 45px;
 
-**Checked:** Cart, checkout and the order screen all show Rs. 130 now.
-Prices without decimals still show without a trailing .00.
+**Checked:** Checked now it shows the above item as well
 
-**Time:** about 40 minutes, most of it working out that the cart and the
-order screen round in different places.
+**Time:** about 30 mins I first didn't get what the query meant like i thought it is saying the search is above the menu then i get it when i checked through the ddeveloper tools that one is behind the nav bar
 
 
 
-## CC-0X — "<the complaint, in short>"
+## CC-02 — "<The dish name and price color problem on the dark them visiblity was not good>"
 
-**Reproduced:**
+**Reproduced:** > "I switched the site to dark mode and now the dish names and the prices
+> are almost invisible. The grey line under the name is fine, it's just
+> the name and the price."
 
-**Cause:**
+**Cause:** Wasn't setuped with data theme
 
-**Fix:**
+**Fix:**I setuped with data-theme present in the html 
 
-**Checked:**
+**Checked:**Checked the text color is now changing
 
-**Time:**
+**Time:**Around 2 hour i didn't get what is causing the problem changed the approach 5 times
 
 
 
@@ -69,5 +69,3 @@ you noticed it.
 MC-01 : The problem is with veg and non veg it automatically doesn't change
     You have to do something then it changes in the first screen which you see
     in the all section else in every other it works
-Mc-02: The only thing is that the above text completely isn't on the screen so margin can be
-    added
