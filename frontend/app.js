@@ -348,10 +348,10 @@ loadMenu();
 
 
 const ghostBtn = document.querySelector('.ghost-btn');
-const namebutton = document.querySelector('.name-btn');
-const dishbutton = document.querySelector('.dish-btn');
+const nameButton = document.querySelector('.name-btn');
+const dishButton = document.querySelector('.dish-price');
 
-ghostbutton.addEventListener('click', function()  {
-  namebutton.classList.toggle('highlight');
-  dishbutton.classList.toggle('highlight');
+ghostBtn.addEventListener('click', function()  {
+  nameButton.classList.toggle('highlight');
+  dishButton.classList.toggle('highlight');
 })
