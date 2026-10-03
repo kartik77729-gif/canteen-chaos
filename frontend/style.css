@@ -1060,3 +1060,10 @@ body.is-offline .site-header { filter: grayscale(0.4); }
   .price-filter input { flex: 1; }
   .staff-controls { width: 100%; justify-content: space-between; }
 }
+
+
+
+
+.name-btn.highlight,.dish-price.highlight {
+  color: white;
+}

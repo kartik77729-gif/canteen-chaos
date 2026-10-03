@@ -344,3 +344,14 @@ document.getElementById('buildTag').textContent =
   document.documentElement.dataset.build || 'unknown';
 
 loadMenu();
+
+
+
+const ghostBtn = document.querySelector('.ghost-btn');
+const namebutton = document.querySelector('.name-btn');
+const dishbutton = document.querySelector('.dish-btn');
+
+ghostbutton.addEventListener('click', function()  {
+  namebutton.classList.toggle('highlight');
+  dishbutton.classList.toggle('highlight');
+})
