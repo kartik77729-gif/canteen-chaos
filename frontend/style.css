@@ -818,7 +818,7 @@ h1, h2, h3 { margin: 0; }
 }
 
 .pick-chip:hover { border-color: var(--orange); }
-.pick-name { font-size: 14px; font-weight: 600; }
+.pick-name { font-size: 14px; font-weight: 600;  }
 .pick-price { font-size: 12px; color: var(--muted); }
 
 .name-btn {
@@ -1064,6 +1064,19 @@ body.is-offline .site-header { filter: grayscale(0.4); }
 
 
 
-.name-btn.highlight,.dish-price.highlight {
-  color: white;
+.dish-price,.name-btn {
+  color: #000000;
 }
+html[data-theme="dark"] .dish-price,.name-btn {  /* This thing is taken from the AI I wanted to do using adding the class but it jjust gave the error continuously
+  but i get to know what it does*/
+  color: #fffefe ;
+}
+
+/*.dish-price {
+  color: #000000;
+}
+
+.dish-price.dark-price {
+  color: #ffffff;
+}
+*/

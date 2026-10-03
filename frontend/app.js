@@ -347,11 +347,34 @@ loadMenu();
 
 
 
-const ghostBtn = document.querySelector('.ghost-btn');
-const nameButton = document.querySelector('.name-btn');
-const dishButton = document.querySelector('.dish-price');
 
-ghostBtn.addEventListener('click', function()  {
-  nameButton.classList.toggle('highlight');
-  dishButton.classList.toggle('highlight');
-})
+const ghostBtn = document.getElementById('themeBtn');
+const themeBtn = document.getElementById('themeBtn');
+
+themeBtn.addEventListener('click', function () {
+  const currentTheme = document.documentElement.getAttribute('data-theme');
+  if (currentTheme === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'light');
+    themeBtn.textContent = 'Dark';
+  } else {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    themeBtn.textContent = 'Light';
+  }
+});
+/*const themeBtn = document.getElementById('themeBtn');
+const dishPrices = document.querySelectorAll('.dish-price'); // Selects all dish price elements
+
+themeBtn.addEventListener('click', function () {
+  const currentTheme = document.documentElement.getAttribute('data-theme');
+  if (currentTheme === 'dark') {
+    document.documentElement.setAttribute('data-theme', 'light');
+    themeBtn.textContent = 'Dark';
+  } else {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    themeBtn.textContent = 'Light';
+  }
+  dishPrices.forEach(function (price) {
+    price.classList.toggle('dark-price');
+  });
+});
+*/
