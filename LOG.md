@@ -69,3 +69,5 @@ you noticed it.
 MC-01 : The problem is with veg and non veg it automatically doesn't change
     You have to do something then it changes in the first screen which you see
     in the all section else in every other it works
+
+MC-02 : The problem is the same dishes keep repeating 9 times
