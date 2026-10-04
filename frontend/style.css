@@ -1064,10 +1064,13 @@ body.is-offline .site-header { filter: grayscale(0.4); }
 
 
 
-.dish-price,.name-btn {
+.dish-price,.name-btn,.qty-value {
   color: #000000;
 }
-html[data-theme="dark"] .dish-price,.name-btn {  /* This thing is taken from someone's help I wanted to do using adding the class but it just gave the error continuously
+html[data-theme="dark"] .name-btn,html[data-theme="dark"] .qty-value {
+  color: #ffffff;
+}
+html[data-theme="dark"] .dish-price {  /* This thing is taken from someone's help I wanted to do using adding the class but it just gave the error continuously
   but I get to know what it does*/
   color: #fffefe ;
 }
