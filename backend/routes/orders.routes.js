@@ -117,7 +117,7 @@ router.post(
 
     // stock is taken only once everything else has passed
     const reserved = validation.reserveStock(req.body.items, menu);
-    if (!reserved.ok) throw conflict('Someone just took the last one', reserved.errors);
+    if (!reserved.ok) throw conflict(reserved.errors.join(', '), []);
 
     const order = {
       token: newToken(orders),
