@@ -40,9 +40,20 @@ Delete the example before you submit.
 
 **Checked:**Checked the text color is now changing
 
-**Time:**Around 2 hour i didn't get what is causing the problem changed the approach 5 times
+**Time:**Around 2 hour i didn't get what is causing the problem changed the approach 3 times
 
+## CC-06 — "<"I ordered more than they had>"
 
+**Reproduced:** > "The counter says only 2 samosas were left but it let me order 5, and
+> the order went through fine. When I got there they only had 2?"
+
+**Cause:** Error wasn't there of this thing
+
+**Fix:** "in the validateline item.qty is compared to 10 and not compared with the stock, no., less than 1 and same in reservestock there is nothing done with item.qty and only the stock decrease so i just pushed an error if stock is less than item then the sentence you want to gave to the customer is pushed to error and in order.routes.js I just changed the sentence which was displayed to another so customer get what canteen is short on"
+
+**Checked:**Checked now it is displaing the error and the error is correct and is displayed in the last part
+
+**Time:** About 45 mins
 
 ## Could not fix
 
