@@ -82,7 +82,7 @@ Delete the example before you submit.
 
 **Time:** About 5 mins
 
-## CC-10 — "<Cancelling makes it worse>"
+## CC-07 — "<Cancelling makes it worse>"
 
 **Reproduced:** > "A student cancelled an order and the number of plates we have left went
 > *down* again instead of coming back. Do that a few times and the system
