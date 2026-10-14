@@ -55,7 +55,7 @@ Delete the example before you submit.
 
 **Time:** About 45 mins
 
-## CC-06 — "<An old coupon still works>"
+## CC-08 — "<An old coupon still works>"
 
 **Reproduced:** > "FRESHERS24 was last year's offer and it expired ages ago. Someone used
 > it yesterday and got the discount?!!"
@@ -68,7 +68,19 @@ Delete the example before you submit.
 
 **Time:** About 20 mins
 
+## CC-10 — "<Sorting by price is backwards>"
 
+**Reproduced:** > "I picked 'price: low to high' and the most expensive things came first.
+> I tried the other option and that gave me the cheap ones. Both are the
+> wrong way round."
+
+**Cause:** The desc was asc and asc was desc
+
+**Fix:** " I changed the desc with asc and asc with desc"
+
+**Checked:**Checked by using the price low to high ang high to low confirming both
+
+**Time:** About 5 mins
 
 ## Could not fix
 
@@ -111,3 +123,5 @@ AC-01 : The problem is with veg and non veg it automatically doesn't change
     in the all section else in every other it works
 
 AC-02 : The problem is the same dishes keep repeating 9 times
+
+## AC-04 — There is a thing like when i have to do sorting i have to go to another page then go to another to get the page sorted but when i open the developer tools then do sorting nothing like that happen it instantly sort the page no need to go like all to lunch then to all like that. 
