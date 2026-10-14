@@ -42,7 +42,7 @@ Delete the example before you submit.
 
 **Time:**Around 2 hour i didn't get what is causing the problem changed the approach 3 times
 
-## CC-06 — "<"I ordered more than they had>"
+## CC-06 — "<I ordered more than they had>"
 
 **Reproduced:** > "The counter says only 2 samosas were left but it let me order 5, and
 > the order went through fine. When I got there they only had 2?"
@@ -55,13 +55,28 @@ Delete the example before you submit.
 
 **Time:** About 45 mins
 
+## CC-06 — "<An old coupon still works>"
+
+**Reproduced:** > "FRESHERS24 was last year's offer and it expired ages ago. Someone used
+> it yesterday and got the discount?!!"
+
+**Cause:** It was with display but no such thing with the data
+
+**Fix:** " I just copied from the coupons.routes.js and change the < to > and put it in the if"
+
+**Checked:**Checked by applying FRESHERS 24
+
+**Time:** About 20 mins
+
+
+
 ## Could not fix
 
 For anything you investigated but did not solve. Say what you tried and
 where you got to. This is worth marks — leaving it blank when you got
 stuck is not.
 
-### CC-0X — "<the complaint>"
+### CC-0X — "<the>"
 
 **What I tried:**
 
@@ -77,8 +92,22 @@ Anything not on the bug log: a problem you found yourself, a test you
 wrote, or a fix you are unsure about. Same format, plus one line on how
 you noticed it.
 
-MC-01 : The problem is with veg and non veg it automatically doesn't change
+## AC-03 — "<The time coupon can be used doesn't decrease>"
+
+**Reproduced:** > time coupon can be used doesn't decrease
+
+**Cause:** It was use.left = use.left
+
+**Fix:** " I just put use.left = use.left -1
+
+**Checked:**Checked by applying BYTE10
+
+**Time:** About 10 mins
+
+**Notice** I was just interacting with the website
+
+AC-01 : The problem is with veg and non veg it automatically doesn't change
     You have to do something then it changes in the first screen which you see
     in the all section else in every other it works
 
-MC-02 : The problem is the same dishes keep repeating 9 times
+AC-02 : The problem is the same dishes keep repeating 9 times
