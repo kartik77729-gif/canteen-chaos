@@ -105,6 +105,9 @@ function applyCoupon(code, lines, coupons, { slot = null, now = new Date() } = {
   if (slot && Array.isArray(coupon.slots) && !coupon.slots.includes(slot)) {
     return { valid: false, discount: 0, reason: `${coupon.code} is not valid right now` };
   }
+  if (new Date(coupon.expiresAt) < now) {
+    return { valid: false, discount: 0, reason: `${coupon.code} is expired` };
+  }
 
   let discount = coupon.type === 'percent' ? (subtotal * coupon.value) / 100 : coupon.value;
   discount = Math.min(discount, coupon.maxDiscount, subtotal);
