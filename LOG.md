@@ -82,6 +82,20 @@ Delete the example before you submit.
 
 **Time:** About 5 mins
 
+## CC-10 — "<Cancelling makes it worse>"
+
+**Reproduced:** > "A student cancelled an order and the number of plates we have left went
+> *down* again instead of coming back. Do that a few times and the system
+> thinks we have none left when the kitchen is full"
+
+**Cause:** While when we ordered something it deducts that much amount from the stock but when we canceled it then also deducts that much from the stock that makes it negative and stock cannot get negative so I can eat it not a problem how much deduct but atleast it should left something for me to eat so due to that
+
+**Fix:** " I just change the minus sign to + sign in the release stock function"
+
+**Checked:**Checked by using veg momos
+
+**Time:** About 5 mins
+
 ## Could not fix
 
 For anything you investigated but did not solve. Say what you tried and
@@ -125,3 +139,15 @@ AC-01 : The problem is with veg and non veg it automatically doesn't change
 AC-02 : The problem is the same dishes keep repeating 9 times
 
 ## AC-04 — There is a thing like when i have to do sorting i have to go to another page then go to another to get the page sorted but when i open the developer tools then do sorting nothing like that happen it instantly sort the page no need to go like all to lunch then to all like that. 
+
+## AC-03 — "<To get the new stock left reload have to be done>"
+
+**Reproduced:** > When we place an order the amount left in the stock doest show up in menu we have to reload
+
+**Cause:** 
+
+**Fix:** " 
+
+**Checked:**
+
+**Time:**
