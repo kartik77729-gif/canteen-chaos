@@ -1,16 +1,6 @@
 # Debug log
 
-Your notes. One entry per bug you fixed, using the template below.
 
-This file is read as carefully as your code. A correct fix you cannot
-explain counts for little; a bug you could not fix but investigated
-honestly still counts for something.
-
-Delete the example before you submit.
-
-
-
-## Example — delete this
 
 ### CC-01 — "The search suggestions are behind everything"
 
@@ -27,7 +17,6 @@ Delete the example before you submit.
 **Time:** about 30 mins I first didn't get what the query meant like i thought it is saying the search is above the menu then i get it when i checked through the ddeveloper tools that one is behind the nav bar
 
 
-
 ## CC-02 — "<The dish name and price color problem on the dark them visiblity was not good>"
 
 **Reproduced:** > "I switched the site to dark mode and now the dish names and the prices
@@ -42,6 +31,7 @@ Delete the example before you submit.
 
 **Time:**Around 2 hour i didn't get what is causing the problem changed the approach 3 times
 
+
 ## CC-06 — "<I ordered more than they had>"
 
 **Reproduced:** > "The counter says only 2 samosas were left but it let me order 5, and
@@ -55,6 +45,7 @@ Delete the example before you submit.
 
 **Time:** About 45 mins
 
+
 ## CC-08 — "<An old coupon still works>"
 
 **Reproduced:** > "FRESHERS24 was last year's offer and it expired ages ago. Someone used
@@ -67,6 +58,7 @@ Delete the example before you submit.
 **Checked:**Checked by applying FRESHERS 24
 
 **Time:** About 20 mins
+
 
 ## CC-10 — "<Sorting by price is backwards>"
 
@@ -82,6 +74,7 @@ Delete the example before you submit.
 
 **Time:** About 5 mins
 
+
 ## CC-07 — "<Cancelling makes it worse>"
 
 **Reproduced:** > "A student cancelled an order and the number of plates we have left went
@@ -96,6 +89,7 @@ Delete the example before you submit.
 
 **Time:** About 5 mins
 
+
 ## CC-03 — "<The menu is wider than my phone>"
 
 **Reproduced:** > "I have to scroll sideways to see the whole menu, and the Add to Cart
@@ -108,6 +102,23 @@ Delete the example before you submit.
 **Checked:** I checked in the developer tools it is showing correect
 
 **Time:** More than 1 hour I didn't get it so i understand with a 2nd year senior
+
+
+## CC-04 — "<The buttons don't work on my tablet>"
+
+**Reproduced:** > "Add to Cart does nothing. The star to save a dish does nothing either.
+> The buttons look completely normal. It works fine on my laptop, and it
+> works on my friend's phone. Only my tablet?"
+
+**Cause:** There was media thing placed on the page for 761 - 900 that was not any useful also creating the problem
+
+**Fix:** " I just deleted that thing"
+
+**Checked:** I checked it by adding the dishes in the cart and the button is working
+
+**Time:** Around 3 mins
+
+
 
 ## Could not fix
 
