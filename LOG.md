@@ -119,6 +119,19 @@
 **Time:** Around 3 mins
 
 
+## CC-04 — "<The category bar scrolls away on my phone>"
+
+**Reproduced:** > "On smaller screens, the category and filter bar scrolls away instead of
+> staying visible at the top while I scroll down through the menu dishes."
+
+**Cause:** First there was a problem that was due to z-idex it was over shadowed by header which cause the problem in all the resolution and also there was overflow there in filter so when the overflow is there and there is something another than visible then it causes the same work in y direction 
+
+**Fix:** " I added the top 92.1668px as it is the height of the header and removed the overflow-x : hidden"
+
+**Checked:** Checked on different ratio 400px 480px 717px 1000px
+
+**Time:** Around 20 mins
+
 
 ## Could not fix
 
