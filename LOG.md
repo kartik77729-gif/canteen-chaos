@@ -96,6 +96,19 @@ Delete the example before you submit.
 
 **Time:** About 5 mins
 
+## CC-03 — "<The menu is wider than my phone>"
+
+**Reproduced:** > "I have to scroll sideways to see the whole menu, and the Add to Cart
+> buttons on the right-hand dishes are cut off the edge of the screen"
+
+**Cause:** 1fr was applied in the menu-grid in the css causing cut of the screen
+
+**Fix:** " I changed the 1 fr to minmax(0,1fr)"
+
+**Checked:** I checked in the developer tools it is showing correect
+
+**Time:** More than 1 hour I didn't get it so i understand with a 2nd year senior
+
 ## Could not fix
 
 For anything you investigated but did not solve. Say what you tried and
