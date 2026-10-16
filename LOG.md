@@ -4,9 +4,7 @@
 
 ### CC-01 — "The search suggestions are behind everything"
 
-**Reproduced:** > "I start typing a dish name and the list of suggestions comes up, but
-> it's stuck behind the rest of the page. I can only click the very top
-> bit of it. The rest I can see, sort of, but clicking does nothing."
+**Reproduced:** When I opened the website i clicked on the search ha not all result were shown and using developer tools i confirmed that there is something behind the filters
 
 **Cause:** There wasn't any margin or padding on the top because of it the items weren't completely shown
 
@@ -19,9 +17,7 @@
 
 ## CC-02 — "<The dish name and price color problem on the dark them visiblity was not good>"
 
-**Reproduced:** > "I switched the site to dark mode and now the dish names and the prices
-> are almost invisible. The grey line under the name is fine, it's just
-> the name and the price."
+**Reproduced:** In the website when i clicked on the dark the color was darkish(not remember)
 
 **Cause:** Wasn't setuped with data theme
 
@@ -34,12 +30,11 @@
 
 ## CC-06 — "<I ordered more than they had>"
 
-**Reproduced:** > "The counter says only 2 samosas were left but it let me order 5, and
-> the order went through fine. When I got there they only had 2?"
+**Reproduced:** In the website i first checked the counter where there is a small quantity the i placed an order of more than the stock and the order got placed
 
-**Cause:** Error wasn't there of this thing
+**Cause:** In the validateline item.qty is compared to 10 and not compared with the stock, no. if it is integer, less than 1 and same in reservestock there is nothing done with item.qty and only the stock decrease
 
-**Fix:** "in the validateline item.qty is compared to 10 and not compared with the stock, no., less than 1 and same in reservestock there is nothing done with item.qty and only the stock decrease so i just pushed an error if stock is less than item then the sentence you want to gave to the customer is pushed to error and in order.routes.js I just changed the sentence which was displayed to another so customer get what canteen is short on"
+**Fix:** "I just pushed an error if stock is less than item then the sentence you want to gave to the customer is pushed to error and in order.routes.js I just changed the sentence which was displayed to another so customer get what canteen is short on"
 
 **Checked:**Checked now it is displaing the error and the error is correct and is displayed in the last part
 
@@ -48,8 +43,7 @@
 
 ## CC-08 — "<An old coupon still works>"
 
-**Reproduced:** > "FRESHERS24 was last year's offer and it expired ages ago. Someone used
-> it yesterday and got the discount?!!"
+**Reproduced:** "FRESHERS24 was 2024 offer and it expired ages ago but when i write FRESHERS24 in the coupon box it got applied and the order was made
 
 **Cause:** It was with display but no such thing with the data
 
@@ -62,9 +56,7 @@
 
 ## CC-10 — "<Sorting by price is backwards>"
 
-**Reproduced:** > "I picked 'price: low to high' and the most expensive things came first.
-> I tried the other option and that gave me the cheap ones. Both are the
-> wrong way round."
+**Reproduced:** > When i opened the website i used the filter section then used sort price low to high and it gave me high to low instead
 
 **Cause:** The desc was asc and asc was desc
 
@@ -77,9 +69,7 @@
 
 ## CC-07 — "<Cancelling makes it worse>"
 
-**Reproduced:** > "A student cancelled an order and the number of plates we have left went
-> *down* again instead of coming back. Do that a few times and the system
-> thinks we have none left when the kitchen is full"
+**Reproduced:** I placed an order but i canceled it then i checked the counter the counter had less value then the original
 
 **Cause:** While when we ordered something it deducts that much amount from the stock but when we canceled it then also deducts that much from the stock that makes it negative and stock cannot get negative so I can eat it not a problem how much deduct but atleast it should left something for me to eat so due to that
 
@@ -92,8 +82,7 @@
 
 ## CC-03 — "<The menu is wider than my phone>"
 
-**Reproduced:** > "I have to scroll sideways to see the whole menu, and the Add to Cart
-> buttons on the right-hand dishes are cut off the edge of the screen"
+**Reproduced:** When i opened the website in the developer tools and set to the px greater than 480px and less than 717px the dish was outside the space i checked it by checking the outline of the body(Don't remenber correctly) 
 
 **Cause:** 1fr was applied in the menu-grid in the css causing cut of the screen
 
@@ -106,11 +95,10 @@
 
 ## CC-04 — "<The buttons don't work on my tablet>"
 
-**Reproduced:** > "Add to Cart does nothing. The star to save a dish does nothing either.
-> The buttons look completely normal. It works fine on my laptop, and it
-> works on my friend's phone. Only my tablet?"
+**Reproduced:** When i tried clicking add to cart button in 800px there was nothing added to the cart while the buttons in filters were working
 
 **Cause:** There was media thing placed on the page for 761 - 900 that was not any useful also creating the problem
+.dish-card::after was an empty box covering the bottom 58px of the card. That is exactly where the Add to Cart button sits, and it is same with .img-wrap do sit at the save button with z=1
 
 **Fix:** " I just deleted that thing"
 
@@ -119,16 +107,31 @@
 **Time:** Around 3 mins
 
 
-## CC-04 — "<The category bar scrolls away on my phone>"
+## CC-05 — "<The category bar scrolls away on my phone>"
 
-**Reproduced:** > "On smaller screens, the category and filter bar scrolls away instead of
-> staying visible at the top while I scroll down through the menu dishes."
+**Reproduced:** In the 400px the filter bar did't stick when i checked it in the developer tools
 
 **Cause:** First there was a problem that was due to z-idex it was over shadowed by header which cause the problem in all the resolution and also there was overflow there in filter so when the overflow is there and there is something another than visible then it causes the same work in y direction 
 
 **Fix:** " I added the top 92.1668px as it is the height of the header and removed the overflow-x : hidden"
 
 **Checked:** Checked on different ratio 400px 480px 717px 1000px
+
+**Time:** Around 20 mins
+
+
+## CC-09 — "<The menu shows more dishes than it should>"
+
+**Reproduced:** > "On smaller screens, the category and filter bar scrolls away instead of
+> staying visible at the top while I scroll down through the menu dishes."
+
+**Cause:** In the function paginate() slices the list into items but the return object has items: list that make the part of paginate(to slice the list) the hardwork the function did
+list. menu.routes.js sends paged.items as dishes, so the whole menu went
+out on every page.
+
+**Fix:** " I just removed the list tag in the return
+
+**Checked:** I checked the website the error which was shown AC-02 check down isn't coming
 
 **Time:** Around 20 mins
 
